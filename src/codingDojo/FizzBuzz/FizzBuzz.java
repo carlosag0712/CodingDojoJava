@@ -8,11 +8,11 @@ public class FizzBuzz {
         String message = "";
 
         if(num%3==0 && num%5==0){
-            message = "Fizz";
+            message = "FizzBuzz";
         } else if(num%5==0){
             message = "Buzz";
         }else if(num%3==0){
-            message = "FizzBuzz";
+            message = "Fizz";
         }else{
 
 
