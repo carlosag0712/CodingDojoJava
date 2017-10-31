@@ -1,4 +1,4 @@
-package codingDojo;
+package codingDojo.Pythagorean;
 
 import java.lang.Math;
 
@@ -7,6 +7,11 @@ import java.lang.Math;
  */
 public class PythagoreanTheorem {
     public double calculateHypotenuse(int legA, int legB){
+        double a = legA * legB;
+        double b = legB * legA;
+        double c = Math.sqrt(a+b);
+
+        return c;
 
 
     }
