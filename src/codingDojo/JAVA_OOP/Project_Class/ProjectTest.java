@@ -26,8 +26,6 @@ public class ProjectTest {
         System.out.println(portfolio.getPortfolioCost());
 
         portfolio.showPortfolio();
-
-
-
+        
     }
 }
