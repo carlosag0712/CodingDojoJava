@@ -1,5 +1,7 @@
 package codingDojo.JAVA_OOP.ObjectMaster_PartTwo;
 
+import static codingDojo.JAVA_OOP.ObjectMaster_PartTwo.Samurai.howMany;
+
 public class HumanTest {
     public static void main(String[] args) {
 
@@ -27,6 +29,11 @@ public class HumanTest {
         samurai.deathBlow(ninja);
         samurai.meditate();
         samurai.deathBlow(wizard);
+        howMany();
+        ninja.showHealth();
+
+
+
 
 
 

@@ -13,5 +13,9 @@ public class Human {
 
     }
 
+    public void showHealth(){
+        System.out.println("health: "+this.health);
+    }
+
 
 }

@@ -8,12 +8,12 @@ package codingDojo.JAVA_OOP.ObjectMaster_PartTwo;
 
 public class Samurai extends Human {
 
-    public int samuraiCount = 0;
+    public static int samuraiCount;
 
     public Samurai(){
         this.health = 200;
         this.name = "Samurai";
-        this.samuraiCount = 1;
+        samuraiCount++;
 
     }
 
@@ -35,10 +35,7 @@ public class Samurai extends Human {
         System.out.println("Samurai back to full health of: "+this.health);
     }
 
-    public static int howMany(){
-        samuraiCount += this.samuraiCount;
-
-        return samuraiCount;
-
+    public static void howMany(){
+        System.out.println("There are "+samuraiCount+" samurais");
     }
 }
