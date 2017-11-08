@@ -2,6 +2,8 @@ package codingDojo.JAVA_OOP.ZooKeeper;
 
 public class Gorilla extends Mammal {
 
+
+
     public void throwSomething(){
         System.out.println("The gorilla threw something");
         this.energyLevel -= 5;
