@@ -7,8 +7,8 @@ public class Human {
     protected int intelligence = 3;
 
     public void attack(Human human){
-        this.health -= this.strength;
-        System.out.println("Current health after attack: "+this.health);
+        human.health = human.health-strength;
+        System.out.println("Current health after attack: "+human.health);
 
     }
 
