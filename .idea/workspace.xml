@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ff6149-15ec-4c20-83b4-b5175981a0c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedListTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java/codingDojo/JAVA_OOP/Project_Class/ProjectTest.class" afterPath="$PROJECT_DIR$/out/production/Java/codingDojo/JAVA_OOP/Project_Class/ProjectTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Gorilla.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/GorillaTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Mammal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Project_Class/ProjectTest.java" afterPath="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Project_Class/ProjectTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,31 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/Node.java">
+      <file leaf-file-name="Mammal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Mammal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="105">
+              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SinglyLinkedList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedList.java">
+      <file leaf-file-name="Gorilla.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Gorilla.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="96" column="44" lean-forward="false" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SinglyLinkedListTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedListTest.java">
+      <file leaf-file-name="GorillaTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/GorillaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,6 +98,9 @@
         <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/Node.java" />
         <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/GorillaTest.java" />
+        <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Mammal.java" />
+        <option value="$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Gorilla.java" />
       </list>
     </option>
   </component>
@@ -166,6 +167,14 @@
               <item name="codingDojo" type="462c0819:PsiDirectoryNode" />
               <item name="JAVA_OOP" type="462c0819:PsiDirectoryNode" />
               <item name="Singly_Linked_List" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="codingDojo" type="462c0819:PsiDirectoryNode" />
+              <item name="JAVA_OOP" type="462c0819:PsiDirectoryNode" />
+              <item name="ZooKeeper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -877,12 +886,12 @@
       <workItem from="1509989739906" duration="8958000" />
       <workItem from="1510080002804" duration="23000" />
       <workItem from="1510080044945" duration="5456000" />
-      <workItem from="1510145283262" duration="1239000" />
+      <workItem from="1510145283262" duration="1815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27759000" />
+    <option name="totallyTimeSpent" value="28335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -896,9 +905,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2885572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2885572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1208,8 +1217,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/Singly_Linked_List/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
+        <state relative-caret-position="589">
           <caret line="96" column="44" lean-forward="false" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/GorillaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Gorilla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codingDojo/JAVA_OOP/ZooKeeper/Mammal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
