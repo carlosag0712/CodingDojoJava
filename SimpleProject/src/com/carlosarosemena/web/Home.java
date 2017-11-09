@@ -1,6 +1,8 @@
 package com.carlosarosemena.web;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,8 +28,16 @@ public class Home extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String favouriteLanguage = request.getParameter("favouriteLanguage");
+		String homeTown = request.getParameter("homeTown");
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.write("<h1>Welcome, "+firstName+" "+lastName+"</h1>"+
+					"<h2>Your favourite language is: "+favouriteLanguage+"</h2>"+
+					"<h2>Your Hometown is: "+homeTown+"</h2>");
+		
 	}
 
 	/**
