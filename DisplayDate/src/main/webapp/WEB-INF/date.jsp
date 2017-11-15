@@ -4,11 +4,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Time Dashboard</title>
+    <title>Date</title>
 </head>
 <body>
-<a href="/date">Date Template</a><br>
-<a href="/time">Time Template</a>
+
+<span>Date is: <c:out value="${date}"/> </span>
 
 </body>
 </html>
