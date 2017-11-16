@@ -14,27 +14,29 @@
 <body>
 <div class="container" style="margin-top: 50px; align-items: center;">
     <h1>Dojo Survey</h1>
-    <form style="width: 600px;">
+    <form style="width: 600px;" action="/result" method="POST">
         <div class="form-group">
             <label>Your Name:</label>
-            <input type="email" class="form-control" name="name">
+            <input type="text" class="form-control" name="name">
         </div>
         <div class="form-group">
             <label>Dojo Location:</label>
             <select class="form-control" name="dojolocation">
                 <option selected disabled></option>
-                <option value="java">Java</option>
-                <option value="python">Python</option>
-                <option value="mean">MEAN</option>
+                <option value="online">Online</option>
+                <option value="washington">Washington</option>
+                <option value="california">California</option>
+
             </select>
         </div>
         <div class="form-group">
             <label>Favourite Language:</label>
             <select class="form-control" name="favouriteLang">
                 <option selected disabled></option>
-                <option value="online">Online</option>
-                <option value="washington">Washington</option>
-                <option value="california">California</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="mean">MEAN</option>
+
             </select>
         </div>
 
