@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<h1>Hello</h1>
+<h1>Hello <c:out value="${username}"></c:out></h1>
 
 <h3>Welcome to SpringBoot!</h3>
 
