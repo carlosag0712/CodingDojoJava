@@ -1,5 +1,7 @@
 
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-    <table class="table table-stripped">
+    <table class="table table-stripped" style="margin-top: 50px;">
         <thead>
             <tr>
                 <th>Name</th>
@@ -24,36 +26,41 @@
             </tr>
         </thead>
         <tbody>
-        <c:forEach
+        <c:forEach var="lang" varStatus="loop" items="${languages}">
             <tr>
-                <td></td>
+                <td><a href="/languages/${loop.index}">${lang.name}</a></td>
+                <td>${lang.creator}</td>
+                <td>${lang.version}</td>
+                <td>
+                    <a href="/languages/delete/${loop.index}" style="text-decoration: underline">delete</a>
+                    <a href="/languages/edit/${loop.index}" style="text-decoration: underline; margin-left:5px;">edit</a>
+                </td>
             </tr>
+        </c:forEach>
         </tbody>
     </table>
 
+    <p style="color: red"><form:errors path="language.*"/></p>
 
-        <form action="" method="">
-            <div class="form-group row">
-                <label for="name" class="col-sm-2 col-form-label col-form-label-lg">Name:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-lg" id="name" name="name" >
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="creator" class="col-sm-2 col-form-label col-form-label-lg">Creator:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-lg" id="creator" name="creator" >
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="version" class="col-sm-2 col-form-label col-form-label-lg">Version:</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-lg" id="version" name="version" >
-                </div>
-            </div>
+        <div class="form-container">
+            <form:form action="/languages" method="POST" modelAttribute="language">
+                <p>
+                    <form:label path="name" for="name">Name</form:label>
+                    <form:input path="name" class="input-size float" type="text" name="creator"></form:input>
+                </p>
+                <p>
+                    <form:label path="creator" for="creator">Creator</form:label>
+                    <form:input path="creator" class="input-size float" type="text" name="name"></form:input>
+                </p>
+                <p>
+                    <form:label path="version" for="version">Version</form:label>
+                    <form:input path="version" class="input-size float" type="text" name="version"></form:input>
+                </p>
 
-            <input type="submit" class="btn btn-success" value="Submit">
-        </form>
+                <input type="submit" class="float" value="Submit"/>
+
+            </form:form>
+        </div>
 
 </div>
 </body>

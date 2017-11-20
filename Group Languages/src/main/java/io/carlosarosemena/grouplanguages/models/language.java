@@ -1,9 +1,14 @@
 package io.carlosarosemena.grouplanguages.models;
 
+import javax.validation.constraints.Size;
+
 public class language {
 
+    @Size(min=2, max = 20, message = "Name must be between 2 and 20 Characters")
     private String name;
+    @Size(min=2, max = 20, message = "Creator must be between 2 and 20 Characters")
     private String creator;
+    @Size(min=1, message = "Version cannot be empty")
     private String version;
 
     public language(){
