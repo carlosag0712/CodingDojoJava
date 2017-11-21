@@ -1,47 +1,43 @@
 package io.carlosarosemena.grouplanguages.services;
 
 import io.carlosarosemena.grouplanguages.models.language;
+import io.carlosarosemena.grouplanguages.repositories.LanguageRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 
 @Service
 public class LanguageService {
+    @Autowired
+    private LanguageRepository languageRepository;
 
-    private ArrayList<language> languages = new ArrayList<>(Arrays.asList(
-            new language("Java", "Carlos Arosemena", "1.8.11"),
-            new language("Python", "Guido van Rossum", "3.6"),
-            new language("Javascript", "Brendan Eich", "1.9.5.5")
 
-    ));
 
-    public ArrayList<language> allLanguages(){
-        return languages;
+    public List<language> allLanguages(){
+
+        return languageRepository.findAll();
     }
 
-    public language findOne(int id){
-        if(id < languages.size()){
-            return languages.get(id);
-        }
-
-        else{
-            return null;
-        }
+    public language findOne(Long id){
+      return languageRepository.findOne(id);
     }
 
     public void addLanguage(language language){
-        languages.add(language);
+
+        languageRepository.save(language);
 
     }
 
-    public void updateLanguage(int id, language language){
-        languages.set(id, language);
-
+    public void updateLanguage(Long id, language language){
+        languageRepository.save(language);
     }
 
-    public void deleteLanguage(int id){
-        languages.remove(id);
+    public void deleteLanguage(Long id){
+        languageRepository.delete(id);
     }
 
 }

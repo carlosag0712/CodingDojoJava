@@ -16,7 +16,7 @@
 <body>
 <div class="container" style="margin-top: 100px;">
     <p><a href="/" style="text-decoration: underline">Dashboard</a></p>
-    <p><a href="/languages/delete/${id}">Delete</a></p>
+    <p><a href="/languages/delete/${language.id}">Delete</a></p>
 
     <p>Name: ${language.name}</p>
     <p>Creator: ${language.creator}</p>

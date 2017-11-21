@@ -19,10 +19,10 @@
 <div class="container">
 <p style="color: red"><form:errors path="language.*"/></p>
     <p><a href="/">Back to Dashboard</a></p>
-    <p><a href="/languages/delete/${id}">Delete</a></p>
+    <p><a href="/languages/delete/${language.id}">Delete</a></p>
 
 <div class="form-container">
-    <form:form action="/languages/update/${id}" method="POST" modelAttribute="language">
+    <form:form action="/languages/update/${language.id}" method="POST" modelAttribute="language">
         <p>
             <form:label path="name" for="name">Name</form:label>
             <form:input path="name" class="input-size float" type="text" name="creator" value="${language.name}"></form:input>

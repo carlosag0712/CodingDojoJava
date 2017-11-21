@@ -41,7 +41,7 @@ public class Main {
     }
 
     @RequestMapping("/languages/{id}")
-    public String showLanguage(Model model, @PathVariable("id") int id){
+    public String showLanguage(Model model, @PathVariable("id") Long id){
         language language = languageService.findOne(id);
         model.addAttribute("id", id);
         model.addAttribute("language", language);
@@ -50,7 +50,7 @@ public class Main {
     }
 
     @RequestMapping("/languages/edit/{id}")
-    public String editLanguage(Model model, @PathVariable("id") int id){
+    public String editLanguage(Model model, @PathVariable("id") Long id){
         language language = languageService.findOne(id);
         model.addAttribute("id", id);
         model.addAttribute("language", language);
@@ -59,7 +59,7 @@ public class Main {
     }
 
     @PostMapping("/languages/update/{id}")
-    public String updateLanguage(@Valid @ModelAttribute("language") language language, BindingResult result, @PathVariable("id") int id){
+    public String updateLanguage(@Valid @ModelAttribute("language") language language, BindingResult result, @PathVariable("id") Long id){
         if(result.hasErrors()){
             return "edit";
         }else{
@@ -69,7 +69,7 @@ public class Main {
     }
 
     @RequestMapping("/languages/delete/{id}")
-    public String deleteLanguage(@PathVariable("id") int id){
+    public String deleteLanguage(@PathVariable("id") Long id){
         languageService.deleteLanguage(id);
 
         return "redirect:/";
