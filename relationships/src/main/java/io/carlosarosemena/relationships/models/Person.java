@@ -1,4 +1,4 @@
-package models;
+package io.carlosarosemena.relationships.models;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -68,5 +68,15 @@ public class Person {
 
     public void setLicense(License license) {
         this.license = license;
+    }
+
+    @PrePersist
+    void createdAt() {
+        this.createdAt = new Date();
+    }
+
+    @PreUpdate
+    void updatedAt() {
+        this.updatedAt = new Date();
     }
 }

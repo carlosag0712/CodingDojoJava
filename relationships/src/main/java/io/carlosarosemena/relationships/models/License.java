@@ -1,19 +1,21 @@
-package models;
+package io.carlosarosemena.relationships.models;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name="licenses")
 public class License {
     @Id
     @GeneratedValue
     private Long id;
     private String number;
-    private Date expiration_date;
+    private Date expirationDate;
     private String state;
     @Column(updatable = false)
     private Date createdAt;
     private Date updatedAt;
+
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="person_id")
     private Person person;
@@ -38,12 +40,12 @@ public class License {
         this.number = number;
     }
 
-    public Date getExpiration_date() {
-        return expiration_date;
+    public Date getExpirationDate() {
+        return expirationDate;
     }
 
-    public void setExpiration_date(Date expiration_date) {
-        this.expiration_date = expiration_date;
+    public void setExpirationDate(Date expirationDate) {
+        this.expirationDate = expirationDate;
     }
 
     public String getState() {
@@ -76,5 +78,15 @@ public class License {
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    @PrePersist
+    void createdAt() {
+        this.createdAt = new Date();
+    }
+
+    @PreUpdate
+    void updatedAt() {
+        this.updatedAt = new Date();
     }
 }
