@@ -1,0 +1,8 @@
+1- eventsPage.jsp => Validation Errors not displaying / Validation working / form POST working
+4- set up that date cannot be before current date
+
+
+done
+
+2- Logout redirects to login page but doesn't kill session => fixed, NOT happy
+3- Register form label last name says first name

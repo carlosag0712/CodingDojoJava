@@ -1,0 +1,51 @@
+Finally got FUCKING fmt to work!!
+
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<fmt:formatDate value="${event.date}" pattern="yy-MMM-dd"/>
+
+format a date
+
+    @DateTimeFormat(pattern = "MM/dd/yyyy HH:mm:ss")
+
+
+@RequestMapping("/date")
+	public String getDatePage(Model model) {
+		formatter = new SimpleDateFormat("EEEE, 'the ' d 'of' MMMM, yyyy,' 'hh:mm aa");
+		String formattedDate = formatter.format(currentDate);
+		model.addAttribute("date", formattedDate);
+		return "datePage.jsp";
+	}
+
+	@RequestMapping("/time")
+	public String getTimePage(Model model) {
+		formatter = new SimpleDateFormat("hh:mm aa");
+		String formattedDate = formatter.format(currentDate);
+		model.addAttribute("date", formattedDate);
+		return "timePage.jsp";
+	}
+
+Search: List<Book> findByDescriptionContaining(String search);
+
+HttpSession:
+
+getCreationTime()
+
+getLastAccessedTime()
+
+test if user in session =>
+<c:if test="${empty var1}">
+     var1 is empty or null.
+ </c:if>
+
+ Join / Cancel
+
+ 1- UI needs to know that user hasn't joined
+ 2- UI needs to say "joining" and if user wants to drop out should cancel
+ 3- if the user Cancels, goes back to "Join"
+ 4- UI needs to recognize if the user is the host of the event, if so then it is Edit | Delete
+ 5- Backend: events/join/{id} finds events by id, gets the users list,adds user
+ 6- Backend: events/cancel/{id} finds events by id, gets the users list,adds user
+ 7- edit and delete only by host - secure URL
+
+

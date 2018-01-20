@@ -1,0 +1,16 @@
+p{
+    color: red;
+}
+
+div.card{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#logoutbtn{
+    margin-right: 10px !important;
+}
+
+.table{
+    width: 900px !important;
+}
