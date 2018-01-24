@@ -1,0 +1,12 @@
+div#wrapper{
+    text-align: center;
+    margin-top: 200px;
+}
+
+form.form-inline{
+    margin-left: 450px;
+}
+
+/*input{*/
+        /*width: 400px !important;*/
+/*}*/
